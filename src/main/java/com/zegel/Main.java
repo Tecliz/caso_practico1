@@ -7,18 +7,18 @@ public class Main {
         este es otro comentario
         este es otro comentario
         */
-        //System.out.println("Hello world!");
+        System.out.println("Hello world!");
         String name = "Zegel";
         int edad = 0;
         int peso = 50;
         boolean isStudent = false;
         double height = 0.0;
         edad = edad + 1;
-        //edad++;
-        //edad--;
-        //edad -= 2;
-        //edad = edad - 1;
-        /*System.out.println("Hello " + name);
+        edad++;
+        edad--;
+        edad -= 2;
+        edad = edad - 1;
+        System.out.println("Hello " + name);
         System.out.println("edad: " + edad);
         System.out.println("Is student: " + isStudent);
         System.out.println("Height: " + height);
@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Hola estudiante");
         } else {
             System.out.println("Hola desconocido");
-        }*/
+        }
         switch (name) {
             case "Zegel":
             case "Juan":
