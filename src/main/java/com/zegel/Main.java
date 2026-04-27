@@ -33,12 +33,12 @@ public class Main {
         System.out.println("Height: " + height);
         System.out.println("Peso: " + (peso + edad));
         System.out.println("Es mayor de edad: " + (edad >= 18));
-        if (name  != "Zegel" && edad > 18) {
+        if (name != "Zegel" && edad > 18) {
             System.out.println("Hola Zegel");
         } else {
             System.out.println("Hola desconocido");
         }
-        if (name  != "Zegel" && edad > 18) {
+        if (name != "Zegel" && edad > 18) {
             System.out.println("Hola Zegel");
         } else if (isStudent) {
             System.out.println("Hola estudiante");
@@ -49,7 +49,7 @@ public class Main {
             case "Zegel":
             case "Juan":
                 System.out.println("Hola Juan");
-                break;    
+                break;
             default:
                 System.out.println("Hola desconocido");
         }
@@ -60,12 +60,11 @@ public class Main {
             System.out.println("Soy estudiante");
             isStudent = false;
         }
-
         do {
             System.out.println("Soy estudiante");
         } while (isStudent);
         try {
-            sum(1, 0 , 2);
+            sum(1, 0, 2);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
@@ -85,7 +84,6 @@ public class Main {
         HashEjemplos hashEjemplos = new HashEjemplos();
         hashEjemplos.agregarUsuario();
         hashEjemplos.imprimirUsuariosConectados();
-
         hashEjemplos.agregarProducto();
         hashEjemplos.imprimirProductos();
         hashEjemplos.imprimirProductosMas10PorcientePrecioStream();
@@ -97,7 +95,27 @@ public class Main {
 
         System.out.println("\n--- EJEMPLO DE STREAMS (IA) ---");
         System.out.println("Ejecuta: java -cp target/classes com.zegel.ia.ProcesadorDatos");
-    }
+
+        // ========== CASO 1: VEHÍCULOS ==========
+        System.out.println("\n=== Sistema de Vehículos ===");
+        Vehiculo[] vehiculos = {
+            new Auto("Toyota", "Corolla", 4),
+            new Moto("Honda", "CBR", false),
+            new Camion("Volvo", "FH16", 20.5)
+        };
+        for (Vehiculo v : vehiculos) {
+            v.acelerar();
+        }
+
+        // ========== CASO 2: USUARIOS ==========
+        System.out.println("\n=== Sistema de Usuarios ===");
+        Admin admin = new Admin("Ricardo", "admin@zegel.pe", "1234");
+        Cliente cliente = new Cliente("Ana", "ana@zegel.pe", "abcd");
+        admin.verPerfil();
+        admin.resetearPassword("nueva123");
+        cliente.verPerfil();
+
+    } // ← cierra el main
 
     public int sum(int a, int b) {
         return a + b;
@@ -106,4 +124,5 @@ public class Main {
     static int sum(int a, int b, int c) throws Exception {
         return a / b + c;
     }
-}
+
+} // ← cierra la clase Main

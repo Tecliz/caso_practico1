@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Java fundamentals learning project** focused on teaching core Java concepts. It's a Maven-based project targeting **Java 21** (using modern Java features). The codebase demonstrates object-oriented programming (OOP) principles, collections (Lists, HashMaps), and stream operations through practical examples.
+This is a **Java fundamentals learning project** focus|ed on teaching core Java concepts. It's a Maven-based project targeting **Java 21** (using modern Java features). The codebase demonstrates object-oriented programming (OOP) principles, collections (Lists, HashMaps), and stream operations through practical examples.
 
 ## Build & Execution Commands
 
