@@ -8,11 +8,7 @@ import com.zegel.ia.ProcesadorDatos;
 
 public class Main {
     public static void main(String[] args) {
-        // esto es un comentario
-        /* 
-        este es otro comentario
-        este es otro comentario
-        */
+
         System.out.println("Hello world!");
         String name = "Zegel";
         int edad = 0;
@@ -115,7 +111,7 @@ public class Main {
         admin.resetearPassword("nueva123");
         cliente.verPerfil();
 
-    } // ← cierra el main
+    } 
 
     public int sum(int a, int b) {
         return a + b;
@@ -125,4 +121,4 @@ public class Main {
         return a / b + c;
     }
 
-} // ← cierra la clase Main
+} 

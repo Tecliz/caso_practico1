@@ -11,6 +11,6 @@ public class Moto extends Vehiculo {
     @Override
     public void acelerar() {
         velocidad += 40;
-        System.out.println("🏍️ Moto " + marca + " acelera rápido. Velocidad: " + velocidad);
+        System.out.println("Moto " + marca + " acelera rápido. Velocidad: " + velocidad);
     }
 }

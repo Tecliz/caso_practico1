@@ -11,6 +11,6 @@ public class Auto extends Vehiculo {
     @Override
     public void acelerar() {
         velocidad += 20;
-        System.out.println("🚗 Auto " + marca + " acelera suavemente. Velocidad: " + velocidad);
+        System.out.println("Auto " + marca + " acelera suavemente. Velocidad: " + velocidad);
     }
 }

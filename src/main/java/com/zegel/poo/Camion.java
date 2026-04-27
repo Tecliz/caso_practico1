@@ -11,6 +11,6 @@ public class Camion extends Vehiculo {
     @Override
     public void acelerar() {
         velocidad += 10;
-        System.out.println("🚛 Camión " + marca + " acelera lento por su peso. Velocidad: " + velocidad);
+        System.out.println("Camión " + marca + " acelera lento por su peso. Velocidad: " + velocidad);
     }
 }
